@@ -1,4 +1,5 @@
 def FibN(num):
+  'Calculate Fib Sequency.'
   result = [0,1]
   while(num<=0):
     num = input('How Many Fib Do You Want Get:')
