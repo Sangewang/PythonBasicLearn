@@ -41,4 +41,5 @@ print checkIPv4("255.255.255.255")
 print checkIPv4("1.2.3.a")
 print checkIPv4("1231.231.3.4")
 print checkIPv4("0.1.1.1")
-
+print checkIPv4("-1.2.3.4")
+print checkIPv4("*&^.3.%.3")
