@@ -1,6 +1,6 @@
 def CountWords(strLine):
   count = len(strLine)
-  print 'The Length of strLine is %d',count
+  print 'The Length of strLine is ',count
   result = {'alpha':0,'space':0,'digit':0,'others':0}
   for i in xrange(count):
     if 'a'<=strLine[i]<='z' or 'A'<=strLine[i]<='Z':
