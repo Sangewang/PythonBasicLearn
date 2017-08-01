@@ -1,0 +1,30 @@
+From foo@baz.baz Thu Dec 20 01:22:50 2008
+Return-Path: <foo@bar.baz>
+Received: fromxyzzy42.bar.com (xyzzy.bar.bar [123.456.789.42])
+          by frozz.bozz.floop (8.9.3/8.9.3) with ESMTP id BAZA25436
+          for <magnus@bozz.floop>: Thu, 20 Dec 2004 01:22:50 +0100 (MET)
+
+Received: from [43.253.124.23] by bar.baz
+          (interMail vM.4.01.03.27 201-229-121-127-20010626) with ESMTP
+          Thu, 20 Dec 2004 00:22:42 +0000
+
+User-Agent: Microsoft-Outlook-Express-Macintosh-Edition/5.02.2022
+Date: Web, 19 Dec 2008 17:22:42 -0700
+Subject: Re: Spam
+From: Foo File <foo@bar.baz>
+To: Magnus Lie Hetland <magbus@bozz.floop>
+CC: <Mr.Gumby@bar.baz>
+Message-ID: <B8467D62.84F%foo@baz.com>
+In-Reply-To: <20041219013308.A2655@bozz.floop>
+Mime-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Content-transfer-encoding: 7bit
+Status: R0
+Content-Length: 55
+Lines: 6
+
+So long, and thanks for all the spam
+
+Yours,
+
+Foo Fie
