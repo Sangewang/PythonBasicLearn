@@ -21,11 +21,11 @@ class Demo:
     return x * y / self.gcd(x,y)
 
 test = Demo()
-print test.gcd(2,9)
-print test.lcm(2,9)
+print 'The gcd(2,9) is = ',test.gcd(2,9)
+print 'The lcm(2,9) is = ',test.lcm(2,9)
 
-print test.gcd(84,24)
-print test.lcm(84,24)
+print 'The gcd(84,24) is = ',test.gcd(84,24)
+print 'THe lcm(84,24) is = ',test.lcm(84,24)
 
-print test.gcd(0,9)
-print test.lcm(24,0)
+print 'The gcd(0,9) is = ',test.gcd(0,9)
+print 'THe lcm(24,0) is = ',test.lcm(24,0)
