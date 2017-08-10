@@ -1,8 +1,6 @@
 import math
 class Demo:
   def ReverseInt(self,input):
-    if input > pow(2,31)-1 or input <0- pow(2,31):
-      return 0
     
     result = []
     output = []
@@ -22,14 +20,13 @@ class Demo:
     
     if index == 0:
       sum = 0 - sum
-    print str_input
-    print result
-    print output
-    print sum
+    if sum > pow(2,31)-1 or sum <0- pow(2,31):
+      sum = 0
+    return sum
      
 num =  pow(2,32)
 print num
 Test = Demo()
-Test.ReverseInt(1230)
-Test.ReverseInt(-123)
+print Test.ReverseInt(1230)
+print Test.ReverseInt(-123)
 print Test.ReverseInt(0-num-1)
