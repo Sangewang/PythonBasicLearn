@@ -22,6 +22,8 @@ class Demo:
 
 
   def LongestCommonPref(self,input):
+    if input == []:
+      return ""
     print("Before sort = ",input)
     '''sorted(input)'''
     input.sort()
@@ -31,7 +33,7 @@ class Demo:
     self.GetTheCommon(input[0],input[count-1])
   
 
-input = ['15ewdwqed2','15sfdewffw3','15112312']
+input = []
 Test = Demo()
 Test.LongestCommonPref(input)
     
