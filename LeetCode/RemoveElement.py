@@ -15,7 +15,9 @@ class Demo:
         while(j<cnt):
           if nums[j]!=nums[i]:
             nums[i] = nums[j]
+            nums[j] = value
             flag_j = j
+            break
           j+=1
     for i in range(cnt):
       if nums[i] != value:
