@@ -1,20 +1,18 @@
-def twoSum( nums, target):
-    result = []
-    count = len(nums)
-    for i in range(0,count):
-        for j in range(i+1,count):
-            if nums[i]+nums[j] == target:
-               print i
-               print j
-               print nums[i]
-               print nums[j]
-               result.append(i)
-               result.append(j)
-               break
-    return result
+import string
 
 
+s = ''
+if s is None:
+  print('\'\' == None')
+else:
+  print('\'\' != None')
 
-num = [3,2,4]
-target = 6
-print twoSum(num,target)
+if not s:
+  print('\'\' == False')
+else:
+  print('\'\' != False')
+
+if s == False:
+  print('Can use \'\' == False')
+else:
+  print('Can not use \'\' == False')
