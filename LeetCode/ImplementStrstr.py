@@ -8,7 +8,8 @@ class Solution(object):
       print("The Length of haystack is %d" % haystack_lenth)
       print("The Length of needle is %d" % needle_lenth)
       for i in xrange(haystack_lenth):
-        print i
+        if i>(haystack_lenth - needle_lenth):
+          break
         tmp_i = i
         match = 0
         while(match < needle_lenth and tmp_i < haystack_lenth and haystack[tmp_i] == needle[match]):
