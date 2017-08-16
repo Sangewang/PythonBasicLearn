@@ -4,16 +4,16 @@ class Solution(object):
       return "1"
     if n == 2:
       return "11"
-    result = self.CountAndSay(n-1)
+    result = self.CountAndSay(n-1) + '*'
     cnt = len(result)
     s = ""
+    count = 1
     for i in range(cnt-1):
-      count = 1 
       if result[i] == result[i+1]:
         count+=1
-      s = s + str(count) + result[i]
-      if(result[cnt-1]!=result[cnt-2]):
-        s = s + str(1) + result[cnt - 1]
+      else:
+        s = s + str(count) + result[i]
+        count = 1
     return s
 
 
