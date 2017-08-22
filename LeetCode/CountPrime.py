@@ -6,9 +6,10 @@ class Solution(object):
     if n<2:
       return count
     result = list(range(0,n))
-    upper = int(pow(n,0.5))
-    for i in range(2,n):
-      if result[i]:
+    upper = int(pow(n,0.5))+1
+    print('upper=',upper)
+    for i in range(2,upper):
+      if result[i] != 0:
         j = i * i
         while(j < n):
           result[j] = 0
@@ -17,7 +18,7 @@ class Solution(object):
       if result[i] != 0:
         count+=1
         output.append(result[i])
-    return count
+    return count,output
 
 Test = Solution()
-print(Test.countPrimes(100000))
+print(Test.countPrimes(5))
