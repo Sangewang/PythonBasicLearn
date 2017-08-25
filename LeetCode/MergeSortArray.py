@@ -3,9 +3,9 @@ class Solution(object):
     print('nums1 = ',nums1)
     nums1.extend(nums2) 
     print('nums1 = ',nums1)
-    nums1.sort()
-    print('nums1 = ',nums1)
-    return nums1
+    return sorted(nums1)
+    #print('nums1 = ',nums1)
+    #return nums1
 Test = Solution()
 nums1 = [10,8,6,4,2]
 nums2 = [9,7,5,3,1]
