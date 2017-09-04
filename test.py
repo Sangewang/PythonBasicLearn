@@ -1,28 +1,36 @@
 import traceback
+class Students(object):
+  @property
+  def score(self):
+    return self._score
 
-from types import MethodType
+  @score.setter
+  def score(self,value):
+    if not isinstance(value,int):
+      raise ValueError('not int')
+    elif(value<0) or (value>100):
+      raise ValueError('not between 0~100')
 
-class MyClass(object):
-  __slots__ = ['name','set_name']
+    self._score = value
+  @property
+  def double_score(self):
+    return self._score * 2
 
-def set_name(self,name):
-  self.name = name
 
-cls = MyClass()
-cls.name = 'Tom'
-cls.set_name = MethodType(set_name,cls)
-cls.set_name('Jerry')
-print(cls.name)
 
+sa = Students()
+sa.score = 75
+print(sa.score)
 try:
-  cls.age = 50
+  sa.score = 10212
+except ValueError:
+  traceback.print_exc()
+try:
+  sa.score = 'asd'
+except:
+  traceback.print_exc()
+print(sa.double_score)
+try:
+  sa.double_score = 160
 except AttributeError:
   traceback.print_exc()
-
-
-class ExtMyClass(MyClass):
-  pass
-
-ext_cls = ExtMyClass()
-ext_cls.age = 30
-print(ext_cls.age)
