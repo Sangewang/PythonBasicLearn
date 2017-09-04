@@ -1,16 +1,28 @@
-from functools import reduce
+import traceback
 
-l = [1,2,3,4,5]
-print(reduce(lambda x,y:x+y,l))
-print(reduce(lambda x,y:x+y,l,10))
+from types import MethodType
+
+class MyClass(object):
+  __slots__ = ['name','set_name']
+
+def set_name(self,name):
+  self.name = name
+
+cls = MyClass()
+cls.name = 'Tom'
+cls.set_name = MethodType(set_name,cls)
+cls.set_name('Jerry')
+print(cls.name)
+
+try:
+  cls.age = 50
+except AttributeError:
+  traceback.print_exc()
 
 
-new_list = list(map(lambda x:x*2,l))
-print(new_list)
+class ExtMyClass(MyClass):
+  pass
 
-merge_list = list(map(lambda x,y:x+y,l,new_list))
-print(merge_list)
-
-l = [100,80,60,40,20,0]
-new = list(filter(lambda x:x<50,l))
-print(new)
+ext_cls = ExtMyClass()
+ext_cls.age = 30
+print(ext_cls.age)
